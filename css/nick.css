@@ -79,6 +79,23 @@ p {
 
 }
 
+
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header nav{
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header nav a{
+    text-decoration: none;
+}
 /* ********************************************************************************************** NICK PAGE STYLES HERE  */
 
 .jumbotron {
@@ -90,11 +107,43 @@ p {
  .box {
     width: 150px;
     height: 150px;
+    margin: 25px;
 
 }
+.top-content{
+    display:flex;
+    flex-direction: row;
+    padding: 5px 0 15px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 3px dotted gray;
+}
+.top-content .text-container{
+    width:50%;
+    padding: 10px;
+}
 
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px dotted gray;
+}
+.middle-content .boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-
+.bottom-content{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bottom-content .text-container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
 /* *************************************************************************************************  FOOTER STYLES HERE  */
  
 footer {
@@ -109,6 +158,7 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    margin: 0 0 50px 0;
 }
 
 footer nav a {
